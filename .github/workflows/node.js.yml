@@ -27,4 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm install discord-token-generator
+    - run: npm audit fix
     - run: node index.js
